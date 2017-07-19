@@ -253,7 +253,7 @@ Add file to index:
 ```
 git add index.html
 ```
-Commit wih a commit comment:
+Commit wih a comment:
 ```
 git commit -m "correct column_header in getSpreadsheet()"
 ```
@@ -261,7 +261,7 @@ Push local changes from branch dataSets to remote URL with alias origin:
 ```
 git push -u origin dataSets
 ```
-Display remote origins [Source](https://help.github.com/articles/removing-a-remote/):
+Display remote origins (compare: [Source](https://help.github.com/articles/removing-a-remote/)):
 ```
 git remote -v
 ```
