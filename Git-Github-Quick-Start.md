@@ -245,47 +245,35 @@ As you can see a new local git repository was created in a directory called `han
 
 ## 5. Git Cheet Sheet
 
-#see current state of the git repository
-
+See current state of the git repository:
 ```
 git status
 ```
-
-# add file to index
-
+Add file to index:
 ```
 git add index.html
 ```
-# commit wih a commit comment
-
+Commit wih a commit comment:
 ```
 git commit -m "correct column_header in getSpreadsheet()"
 ```
-
-# push local changes from branch dataSets to remote URL with alias origin 
-
+Push local changes from branch dataSets to remote URL with alias origin:
 ```
 git push -u origin dataSets
 ```
-
-#https://help.github.com/articles/removing-a-remote/
-#display remote origins
-
+Display remote origins [Source](https://help.github.com/articles/removing-a-remote/):
 ```
 git remote -v
 ```
-#remove the remote URL called "origin"
-
+Remove the remote URL "origin":
 ```
 git remote rm origin
 ```
-#pretty log of changes
-
+Print pretty log of changes:
 ```
 git log --pretty=oneline
 ```
-#see differences between two versions of the same file 
-
+Display differences between two versions of the same file:
 ```
 git diff d839fc912115b427a7fff14eab65b18445fd0d3c:scripts/ouwt.js f6794849b554257a55a56d27eb2e8d66e8cb3f5e:scripts/ouwt.js
 ```
