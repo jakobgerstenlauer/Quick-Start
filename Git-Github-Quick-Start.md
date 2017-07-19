@@ -253,6 +253,10 @@ Add file to index:
 ```
 git add index.html
 ```
+Display differences between staged version of file and the head (in order to write a useful commit comment):
+```
+git diff --cached
+```
 Commit wih a comment:
 ```
 git commit -m "correct column_header in getSpreadsheet()"
