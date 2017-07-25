@@ -257,7 +257,7 @@ Display differences between staged version of file and the head (in order to wri
 ```
 git diff --cached
 ```
-Commit wih a comment:
+Commit with a comment:
 ```
 git commit -m "correct column_header in getSpreadsheet()"
 ```
@@ -280,6 +280,11 @@ git log --pretty=oneline
 Display differences between two versions of the same file:
 ```
 git diff d839fc912115b427a7fff14eab65b18445fd0d3c:scripts/ouwt.js f6794849b554257a55a56d27eb2e8d66e8cb3f5e:scripts/ouwt.js
+```
+
+Create and start working on a new branch:
+```
+git checkout -b fix_ugly_bug
 ```
 
 <a name="detail"/>
