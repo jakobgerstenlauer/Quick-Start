@@ -257,6 +257,14 @@ Display differences between staged version of file and the head (in order to wri
 ```
 git diff --cached
 ```
+Display the latest changes (differences between current commit and predecessor):
+```
+git diff 75d2918^! 
+```
+Display the changes between two commits for a specific file:
+```
+git diff 75d2918 05bcfd1 -- src/hello_world.cpp 
+```
 Commit with a comment:
 ```
 git commit -m "correct column_header in getSpreadsheet()"
@@ -277,6 +285,11 @@ Print pretty log of changes:
 ```
 git log --pretty=oneline
 ```
+Print a graph view of the commits:
+```
+git log --graph
+```
+
 Display differences between two versions of the same file:
 ```
 git diff d839fc912115b427a7fff14eab65b18445fd0d3c:scripts/ouwt.js f6794849b554257a55a56d27eb2e8d66e8cb3f5e:scripts/ouwt.js
