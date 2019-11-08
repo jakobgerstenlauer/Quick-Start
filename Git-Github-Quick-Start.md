@@ -311,7 +311,15 @@ echo <dir3>/ >> .git/info/sparse-checkout
 git pull origin master
 <a name="detail"/>
 ```
+
 Source: https://stackoverflow.com/questions/2425059/how-to-pull-specific-directory-with-git
+
+Purge a file from the git history:
+```
+git filter-branch --force --index-filter \
+  "git rm --cached --ignore-unmatch file_to_delete.R" \
+  --prune-empty --tag-name-filter cat -- --all
+```
 
 ## 6. To go into more detail
 An excellent book is the [Pro Git](https://git-scm.com/book) book, written by Scott Chacon and Ben Straub and published by Apress. It is available [here](https://git-scm.com/book) (pdf, epub, mobi, html). All content is licensed under the Creative Commons Attribution Non Commercial Share Alike 3.0 license. Print versions of the book are available on [Amazon.com](https://www.amazon.com/Pro-Git-Scott-Chacon/dp/1484200772?ie=UTF8&camp=1789&creative=9325&creativeASIN=1430218339&linkCode=as2&tag=git-sfconservancy-20).
